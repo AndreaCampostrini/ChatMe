@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/512/filled-chat.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>web chat</h1>
+    <p id="messaggi"></p>
+    <div id="register">
+        <input type="text" id="nome" placeholder="Inserisci il nome">
+        <button type="submit" onclick="register()">Register</button>
+    </div>
+    <div id="chat" style="visibility: hidden;">
+        <input type="text" placeholder="message" id="message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div id="messages"></div>
+    <div id="users"></div>
+    <div>
+        <h3>Utenti connessi</h3>
+        <ul id="nicknames"></ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

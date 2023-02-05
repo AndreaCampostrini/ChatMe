@@ -23,5 +23,6 @@ io.on("connection", (socket) => {
     );
     socket.broadcast.emit("newuser", socket.nome + " si è unito alla chat.");
     io.emit("newuser", socket.nome);
+      
   });
 });

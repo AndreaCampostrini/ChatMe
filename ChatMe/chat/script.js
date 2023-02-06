@@ -1,3 +1,4 @@
+var openpgp = pgp();
 var socket = io();
 
 socket.on('welcome', (msg) => {

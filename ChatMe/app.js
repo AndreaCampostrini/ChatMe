@@ -1,9 +1,9 @@
 const express = require("express");
 const config = require("./config.js");
 const socketio = require("socket.io");
+const openpgp = require("openpgp");
 
 const app = express();
-
 app.use(express.static("chat"));
 
 const server = app.listen(config.port, () => {
